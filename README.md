@@ -27,5 +27,5 @@ This project simulates memory allocation processes, such as allocation and deall
 2. Install **Apache Maven** (for building the project).
 3. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/memory-allocation-simulator.git
+   https://github.com/SathsaraPSF/Worst-fit-Algorithm-.git
    cd memory-allocation-simulator

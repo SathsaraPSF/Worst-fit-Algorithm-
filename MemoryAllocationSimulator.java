@@ -50,9 +50,9 @@ class MemoryAllocationSimulator extends JFrame {
         Font allocationSizeLabelFont = allocationSizeLabel.getFont();
         Font newAllocationSizeLabelFont = allocationSizeLabelFont.deriveFont(20f);
         allocationSizeLabel.setFont(newAllocationSizeLabelFont);
-
         inputPanel.add(allocationSizeLabel);
-        allocSizeField = new JTextField(20);
+
+        allocSizeField = new JTextField(10);
         allocSizeField.setFont(new Font("Arial", Font.BOLD, 18));
         allocSizeField.setBorder(BorderFactory.createCompoundBorder(
                 allocSizeField.getBorder(),
@@ -89,7 +89,7 @@ class MemoryAllocationSimulator extends JFrame {
         inputPanel.add(freeButton);
 
         // Output Area
-        outputArea = new JTextArea(10, 40);
+        outputArea = new JTextArea(6, 40);
         outputArea.setEditable(false);
         JScrollPane scrollPane = new JScrollPane(outputArea);
 

@@ -1,5 +1,4 @@
 
-import javax.swing.JFrame;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.border.TitledBorder;
@@ -79,7 +78,7 @@ class MemoryAllocationSimulator extends JFrame {
         freeAddressField.setBorder(BorderFactory.createCompoundBorder(
                 freeAddressField.getBorder(),
                 BorderFactory.createEmptyBorder(0, 10, 0, 5)));
-        freeAddressField.setPreferredSize(new Dimension(100, 50));
+        freeAddressField.setPreferredSize(new Dimension(100, 10));
         inputPanel.add(freeAddressField);
 
         // Free Button
@@ -96,10 +95,11 @@ class MemoryAllocationSimulator extends JFrame {
 
         // Visualization Panel
         visualizationPanel = new MemoryVisualizationPanel(memoryManager);
+        JScrollPane visualizationScrollPane = new JScrollPane(visualizationPanel);
 
         // Add components to frame
         add(inputPanel, BorderLayout.NORTH);
-        add(visualizationPanel, BorderLayout.CENTER);
+        add(visualizationScrollPane, BorderLayout.CENTER);
         add(scrollPane, BorderLayout.SOUTH);
     }
 

@@ -1,6 +1,6 @@
 # Memory Allocation Simulator
 
-This project simulates memory allocation processes, such as allocation and deallocation, with a graphical user interface. It visualizes how memory is managed using algorithms like Worst-Fit, Best-Fit, or First-Fit.
+This project simulates memory allocation processes, such as allocation and deallocation, with a graphical user interface. It visualizes how memory is managed using algorithms  Worst-Fit.
 
 ## Features
 
